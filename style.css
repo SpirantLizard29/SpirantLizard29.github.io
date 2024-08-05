@@ -1,49 +1,172 @@
-html,
 body {
-    width: 100%;
-    height: 100%;
-    font-family: "Montserrat", sans-serif;
-    background: url(header.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  margin: auto 0;
+  font-family: "Dongle", sans-serif;
 }
 
-h1 {
-    font-size: 3rem;
-    color: #e2dbdb;
+.zone {
+  font-size: 2em;
+  border: 0px solid #3c3c3c;
+  transition: all 0.3s linear;
 }
 
-hr {
-    border-color: #ffffff;
-    border-width: 3px;
-    max-width: 65px;
-    opacity: 1;
-    margin: 1rem auto;
+/* NAV */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-.buffer {
-    height: 16rem;
+.main-nav {
+  display: flex;
+  list-style: none;
+  font-size: 0.7em;
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-nav {
+    font-size: 0.5em;
+    padding: 0;
+  }
+}
+
+.push {
+  margin-left: auto;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-family: "Inknut Antiqua", serif;
+  font-size: 1rem;
+}
+
+a {
+  color: #f5f5f6;
+  text-decoration: none;
+}
+
+.size {
+  width: 20%;
+}
+
+/* COVER */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover {
+  height: 57.5vh;
+}
+
+.imagebackground {
+  background-image: url("https://images.pexels.com/photos/5644346/pexels-photo-5644346.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 70vh;
+  color: black;
 }
 
 .btn {
-    font-weight: 700;
-    border-radius: 300px;
-    text-transform: uppercase;
+  margin: 20px 0px 0px 0px;
+  padding: 0 20px;
+  color: #fff;
+  background: #000;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-family: "Inknut Antiqua", serif;
+  transition: all 0.1s linear;
+}
+
+.btn-margin {
+  margin-right: 20px;
 }
 
 .btn-primary {
-    background-color: #f05f44;
-    border-color: #f05f44;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  font-size: 16px;
+  border-radius: 30px;
+
+  font-weight: 600;
+  text-decoration: none;
 }
 
-.btn-primary:hover {
-    border-width: 4px;
-    background-color: #ee4b08;
-    border-color: #ee4b08;
+.btn-none {
+  border: 0px;
+  background-color: #fff;
+  color: #000;
 }
 
-.btn-xl {
-    padding: 1rem 2rem;
+.btn:hover {
+  background-color: #4a4a4a;
+  color: #f2f2f2;
+  transform: scale(1.1);
+}
+
+.btn-none:hover {
+  background-color: #fff;
+  color: #3c3c3c;
+}
+
+/* GRID */
+.grid-wrapper {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.white {
+  background-color: white;
+}
+
+.black {
+  background-color: rgb(0, 0, 0, 0.1);
+}
+
+.box > img {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.box {
+  padding: 0;
+  margin: 20px;
+  transition: all 0.1s linear;
+}
+
+.box:hover {
+  transform: rotate(-1deg) scale(1.05);
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+}
+
+/*  */
+
+.green {
+  background-image: linear-gradient(to bottom right, greenyellow, olive);
+}
+
+.red {
+  background-image: radial-gradient(white, coral);
+}
+
+.blue {
+  background-image: linear-gradient(to bottom right, skyblue, darkcyan);
+}
+
+.yellow {
+  background-image: linear-gradient(to bottom right, coral, gold);
+  height: 21.5vh;
+  font-size: 5rem;
 }
