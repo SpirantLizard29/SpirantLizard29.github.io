@@ -120,6 +120,22 @@ a {
   color: #3c3c3c;
 }
 
+@media only screen and (max-width: 900px) {
+  .btn {
+    margin: 15px 0px 0px 15px;
+    padding: 0 15px;
+  }
+
+  .btn-primary {
+    height: 36px;
+    font-size: 8px;
+  }
+
+  .btn-margin {
+    margin-right: 15px;
+  }
+}
+
 /* GRID */
 .grid-wrapper {
   display: grid;
