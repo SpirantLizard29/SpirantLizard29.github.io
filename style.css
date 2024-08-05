@@ -9,6 +9,12 @@ body {
   transition: all 0.3s linear;
 }
 
+@media only screen and (max-width: 900px) {
+  .zone {
+    font-size: 1em;
+  }
+}
+
 /* NAV */
 .sticky {
   position: fixed;
