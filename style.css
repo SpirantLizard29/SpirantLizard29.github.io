@@ -3,6 +3,24 @@ body {
   font-family: "Dongle", sans-serif;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border: 1px solid transparent;
+  margin: 5px 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-image: linear-gradient(to bottom right, skyblue, darkcyan);
+}
+
 .zone {
   font-size: 2em;
   border: 0px solid #3c3c3c;
